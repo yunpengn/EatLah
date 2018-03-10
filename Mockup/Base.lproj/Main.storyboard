@@ -56,7 +56,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preparing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0G0-qB-saf" userLabel="Status">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preparing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0G0-qB-saf" userLabel="Status" customClass="StatusLabel" customModule="Mockup" customModuleProvider="target">
                                                     <rect key="frame" x="153" y="123" width="74.5" height="20"/>
                                                     <color key="backgroundColor" red="0.94275027513504028" green="0.69018577375538759" blue="0.34677758543218762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
@@ -86,6 +86,12 @@
                                             <constraint firstAttribute="bottom" secondItem="0G0-qB-saf" secondAttribute="bottom" constant="5" id="wXu-eq-dgV"/>
                                             <constraint firstItem="Uwb-ep-LXn" firstAttribute="leading" secondItem="PSo-2G-SxB" secondAttribute="leading" id="x8J-35-gIq"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="createTime" destination="7sP-jD-tQm" id="Mdy-dk-ReH"/>
+                                            <outlet property="image" destination="Uwb-ep-LXn" id="q3a-lW-eFU"/>
+                                            <outlet property="restaurant" destination="v9O-oO-hqk" id="06j-Jr-JZZ"/>
+                                            <outlet property="status" destination="0G0-qB-saf" id="DTl-iK-gIa"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
