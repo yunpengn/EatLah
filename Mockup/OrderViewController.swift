@@ -13,8 +13,8 @@ class OrderViewController: UIViewController {
 
     let images = [#imageLiteral(resourceName: "chickenRice"), #imageLiteral(resourceName: "curryMonster"), #imageLiteral(resourceName: "burger")]
     let restaurants = ["Biz Canteen Chick Rice", "Vivocity Curry Monster", "Burger King"]
-    let time = ["04-08-2018 15:31", "31-03-2018 9:31", "04-08-2018 20:47"]
-    let status: [Status] = [.preparing, .finish, .finish]
+    let time = ["04-08-2018 15:31", "04-08-2018 14:27", "22-05-2018 20:47"]
+    let status: [Status] = [.preparing, .ready, .finish]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +41,7 @@ extension OrderViewController: UICollectionViewDelegate, UICollectionViewDataSou
         cell.image.image = images[indexPath.section]
         cell.restaurant.text = restaurants[indexPath.section]
         cell.createTime.text = time[indexPath.section]
+        cell.status.setText(status[indexPath.section])
         return cell
     }
 
