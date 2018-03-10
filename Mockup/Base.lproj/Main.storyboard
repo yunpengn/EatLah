@@ -146,7 +146,7 @@
         <!--ListingViewController-->
         <scene sceneID="rhe-pJ-IcB">
             <objects>
-                <viewController id="rxd-Z0-Orb" userLabel="ListingViewController" customClass="ListingViewController" customModule="Mockup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rxd-Z0-Orb" userLabel="ListingViewController" customClass="RestaurantViewController" customModule="Mockup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YOP-fg-DOn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,25 +188,36 @@
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15min" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mj4-K2-yfA" userLabel="WaitingTime">
+                                                    <rect key="frame" x="243.5" y="114.5" width="45.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="vcj-cE-y0V" firstAttribute="top" secondItem="dVU-4n-8Ks" secondAttribute="bottom" id="3f5-hv-woI"/>
+                                            <constraint firstItem="mj4-K2-yfA" firstAttribute="top" secondItem="dVU-4n-8Ks" secondAttribute="bottom" id="BuH-gC-Y89"/>
                                             <constraint firstItem="dVU-4n-8Ks" firstAttribute="leading" secondItem="euS-SZ-5Z4" secondAttribute="leading" id="Ddh-A8-o6z"/>
                                             <constraint firstItem="dVU-4n-8Ks" firstAttribute="trailing" secondItem="euS-SZ-5Z4" secondAttribute="trailing" id="HoC-lD-Rtu"/>
                                             <constraint firstItem="dVU-4n-8Ks" firstAttribute="top" secondItem="euS-SZ-5Z4" secondAttribute="top" id="T7d-kk-Opy"/>
                                             <constraint firstItem="vcj-cE-y0V" firstAttribute="bottom" secondItem="euS-SZ-5Z4" secondAttribute="bottom" constant="-5" id="TFR-xr-TPK"/>
                                             <constraint firstItem="vcj-cE-y0V" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="euS-SZ-5Z4" secondAttribute="leading" symbolic="YES" id="UQc-Ve-Td9"/>
                                             <constraint firstItem="Qrl-tT-6cK" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="euS-SZ-5Z4" secondAttribute="trailing" symbolic="YES" id="XB0-do-MsR"/>
+                                            <constraint firstItem="mj4-K2-yfA" firstAttribute="bottom" secondItem="euS-SZ-5Z4" secondAttribute="bottom" constant="-5" id="cx0-7t-mwY"/>
                                             <constraint firstItem="vcj-cE-y0V" firstAttribute="trailing" secondItem="euS-SZ-5Z4" secondAttribute="trailing" id="hdD-zU-dw0"/>
                                             <constraint firstItem="Qrl-tT-6cK" firstAttribute="top" secondItem="dVU-4n-8Ks" secondAttribute="bottom" id="ixi-R9-5d3"/>
                                             <constraint firstItem="Qrl-tT-6cK" firstAttribute="bottom" secondItem="euS-SZ-5Z4" secondAttribute="bottom" constant="-5" id="lId-BR-BRw"/>
+                                            <constraint firstItem="mj4-K2-yfA" firstAttribute="trailing" secondItem="vcj-cE-y0V" secondAttribute="leading" constant="-30" id="oEr-NF-4wU"/>
+                                            <constraint firstItem="mj4-K2-yfA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="euS-SZ-5Z4" secondAttribute="leading" symbolic="YES" id="thG-f0-Bzu"/>
                                             <constraint firstItem="Qrl-tT-6cK" firstAttribute="leading" secondItem="euS-SZ-5Z4" secondAttribute="leading" id="wx9-8k-zac"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="image" destination="dVU-4n-8Ks" id="zjn-Yi-e2F"/>
                                             <outlet property="location" destination="vcj-cE-y0V" id="6Tu-om-S0f"/>
                                             <outlet property="name" destination="Qrl-tT-6cK" id="hJu-9n-GBm"/>
+                                            <outlet property="waitingTime" destination="mj4-K2-yfA" id="LTa-K2-l5G"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

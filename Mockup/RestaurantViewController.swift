@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RestaurantViewController.swift
 //  Mockup
 //
 //  Created by Yunpeng Niu on 09/03/18.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ListingViewController: UIViewController {
+class RestaurantViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var restaurantListing: UICollectionView!
 
     let food = [#imageLiteral(resourceName: "cake"), #imageLiteral(resourceName: "fruit"), #imageLiteral(resourceName: "pasta"), #imageLiteral(resourceName: "pizza"), #imageLiteral(resourceName: "salmon")]
     let name = ["Swift Canteen", "Blast Saga Food Center", "AMK Hawker Center", "My pizza", "Vista Cut"]
     let location = ["<100m", "<500m", "10km", "30km", "5km"]
+    let waitingTime = ["15min", "7min", "10min", "30min", "<1min"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,7 @@ class ListingViewController: UIViewController {
     }
 }
 
-extension ListingViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension RestaurantViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     /// Sets the number of sections.
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return food.count
@@ -45,6 +46,7 @@ extension ListingViewController: UICollectionViewDelegate, UICollectionViewDataS
         cell.image.image = food[indexPath.section]
         cell.name.text = name[indexPath.section]
         cell.location.text = location[indexPath.section]
+        cell.waitingTime.text = waitingTime[indexPath.section]
         return cell
     }
 
@@ -58,7 +60,7 @@ extension ListingViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
 }
 
-extension ListingViewController: UISearchBarDelegate {
+extension RestaurantViewController: UISearchBarDelegate {
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
         restaurantListing.alpha = 0.4
         return true

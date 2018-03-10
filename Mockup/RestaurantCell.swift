@@ -12,4 +12,5 @@ class RestaurantCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var waitingTime: UILabel!
 }
