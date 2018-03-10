@@ -13,4 +13,5 @@ class OrderCell: UICollectionViewCell {
     @IBOutlet weak var restaurant: UILabel!
     @IBOutlet weak var createTime: UILabel!
     @IBOutlet weak var status: StatusLabel!
+    @IBOutlet weak var waitingTime: UILabel!
 }

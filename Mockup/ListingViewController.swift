@@ -13,7 +13,7 @@ class ListingViewController: UIViewController {
     @IBOutlet weak var restaurantListing: UICollectionView!
 
     let food = [#imageLiteral(resourceName: "cake"), #imageLiteral(resourceName: "fruit"), #imageLiteral(resourceName: "pasta"), #imageLiteral(resourceName: "pizza"), #imageLiteral(resourceName: "salmon")]
-    let name = ["Swift Cake", "Blast Saga", "Kinder Rest", "My pizza", "Vista Cut"]
+    let name = ["Swift Canteen", "Blast Saga Food Center", "AMK Hawker Center", "My pizza", "Vista Cut"]
     let location = ["<100m", "<500m", "10km", "30km", "5km"]
 
     override func viewDidLoad() {

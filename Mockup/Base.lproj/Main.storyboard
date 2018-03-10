@@ -69,21 +69,30 @@
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimate about 15 minutes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KW-7f-ECe" userLabel="WaitingTime">
+                                                    <rect key="frame" x="153" y="101" width="170.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="v9O-oO-hqk" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="PSo-2G-SxB" secondAttribute="trailing" symbolic="YES" id="4Dd-cG-Kep"/>
                                             <constraint firstItem="Uwb-ep-LXn" firstAttribute="top" secondItem="PSo-2G-SxB" secondAttribute="top" id="4Yr-SS-mOw"/>
+                                            <constraint firstItem="6KW-7f-ECe" firstAttribute="bottom" secondItem="0G0-qB-saf" secondAttribute="top" constant="-5" id="7rI-8H-7pW"/>
                                             <constraint firstItem="Uwb-ep-LXn" firstAttribute="width" secondItem="PSo-2G-SxB" secondAttribute="height" id="HpW-nO-0qL"/>
+                                            <constraint firstItem="6KW-7f-ECe" firstAttribute="leading" secondItem="Uwb-ep-LXn" secondAttribute="trailing" constant="5" id="Hyi-Cq-Ids"/>
                                             <constraint firstItem="7sP-jD-tQm" firstAttribute="top" secondItem="v9O-oO-hqk" secondAttribute="bottom" constant="5" id="JDh-Xy-mry"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7sP-jD-tQm" secondAttribute="trailing" symbolic="YES" id="KgT-yr-P6h"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6KW-7f-ECe" secondAttribute="trailing" symbolic="YES" id="KUq-o8-n2r"/>
+                                            <constraint firstItem="7sP-jD-tQm" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="PSo-2G-SxB" secondAttribute="trailing" symbolic="YES" id="KgT-yr-P6h"/>
                                             <constraint firstItem="v9O-oO-hqk" firstAttribute="top" secondItem="PSo-2G-SxB" secondAttribute="top" constant="5" id="byX-IM-7bC"/>
                                             <constraint firstItem="Uwb-ep-LXn" firstAttribute="bottom" secondItem="PSo-2G-SxB" secondAttribute="bottom" constant="-5" id="cU5-lE-L79"/>
                                             <constraint firstItem="v9O-oO-hqk" firstAttribute="leading" secondItem="Uwb-ep-LXn" secondAttribute="trailing" constant="5" id="jlN-h4-XVe"/>
                                             <constraint firstItem="0G0-qB-saf" firstAttribute="leading" secondItem="Uwb-ep-LXn" secondAttribute="trailing" constant="5" id="sH3-l7-YZV"/>
                                             <constraint firstItem="7sP-jD-tQm" firstAttribute="leading" secondItem="Uwb-ep-LXn" secondAttribute="trailing" constant="5" id="sLQ-4W-FAi"/>
                                             <constraint firstItem="0G0-qB-saf" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="PSo-2G-SxB" secondAttribute="trailing" priority="200" symbolic="YES" id="u8g-wk-3uf"/>
-                                            <constraint firstAttribute="bottom" secondItem="0G0-qB-saf" secondAttribute="bottom" constant="5" id="wXu-eq-dgV"/>
+                                            <constraint firstItem="0G0-qB-saf" firstAttribute="bottom" secondItem="PSo-2G-SxB" secondAttribute="bottom" constant="-5" id="wXu-eq-dgV"/>
                                             <constraint firstItem="Uwb-ep-LXn" firstAttribute="leading" secondItem="PSo-2G-SxB" secondAttribute="leading" id="x8J-35-gIq"/>
                                         </constraints>
                                         <connections>
@@ -91,6 +100,7 @@
                                             <outlet property="image" destination="Uwb-ep-LXn" id="q3a-lW-eFU"/>
                                             <outlet property="restaurant" destination="v9O-oO-hqk" id="06j-Jr-JZZ"/>
                                             <outlet property="status" destination="0G0-qB-saf" id="DTl-iK-gIa"/>
+                                            <outlet property="waitingTime" destination="6KW-7f-ECe" id="qCk-JN-0bh"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
