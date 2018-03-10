@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F24D728D2054056D00B5FF27 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F24D728C2054056C00B5FF27 /* README.md */; };
 		F26B05E02052E49A003BA70E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26B05DF2052E49A003BA70E /* AppDelegate.swift */; };
 		F26B05E22052E49A003BA70E /* ListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26B05E12052E49A003BA70E /* ListingViewController.swift */; };
 		F26B05E52052E49A003BA70E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26B05E32052E49A003BA70E /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F24D728C2054056C00B5FF27 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F26B05DC2052E49A003BA70E /* Mockup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mockup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26B05DF2052E49A003BA70E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F26B05E12052E49A003BA70E /* ListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		F26B05D32052E49A003BA70E = {
 			isa = PBXGroup;
 			children = (
+				F24D728C2054056C00B5FF27 /* README.md */,
 				F26B05DE2052E49A003BA70E /* Mockup */,
 				F26B05DD2052E49A003BA70E /* Products */,
 			);
@@ -128,6 +131,7 @@
 			files = (
 				F26B05EA2052E49A003BA70E /* LaunchScreen.storyboard in Resources */,
 				F26B05E72052E49A003BA70E /* Assets.xcassets in Resources */,
+				F24D728D2054056D00B5FF27 /* README.md in Resources */,
 				F26B05E52052E49A003BA70E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +286,7 @@
 				DEVELOPMENT_TEAM = Q8RFHAF8MS;
 				INFOPLIST_FILE = Mockup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nus.cs3217.a0162492a.Mockup;
+				PRODUCT_BUNDLE_IDENTIFIER = nus.cs3217.a0162492a.EatLah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,7 +301,7 @@
 				DEVELOPMENT_TEAM = Q8RFHAF8MS;
 				INFOPLIST_FILE = Mockup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nus.cs3217.a0162492a.Mockup;
+				PRODUCT_BUNDLE_IDENTIFIER = nus.cs3217.a0162492a.EatLah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
