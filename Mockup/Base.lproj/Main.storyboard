@@ -6,25 +6,110 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Georgia.ttf">
+            <string>Georgia</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Orders-->
+        <!--OrderViewController-->
         <scene sceneID="MB8-oC-H5u">
             <objects>
-                <viewController id="MzF-Xn-Yxx" sceneMemberID="viewController">
+                <viewController id="MzF-Xn-Yxx" userLabel="OrderViewController" customClass="OrderViewController" customModule="Mockup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dzU-3l-ItZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Be-Ad-JRx" userLabel="NavigationBar">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Your Orders" id="Bxv-5W-ZuO"/>
+                                </items>
+                            </navigationBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="diC-ic-ykI" userLabel="OrderListing">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gSA-tj-rTd" userLabel="FlowLayout">
+                                    <size key="itemSize" width="375" height="148"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="orderCell" id="PSo-2G-SxB" userLabel="OrderCell" customClass="OrderCell" customModule="Mockup" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chickenRice" translatesAutoresizingMaskIntoConstraints="NO" id="Uwb-ep-LXn" userLabel="Image">
+                                                    <rect key="frame" x="0.0" y="0.0" width="148" height="143"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Science Canteen Chicken Rice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9O-oO-hqk" userLabel="Restaurant">
+                                                    <rect key="frame" x="153" y="5" width="208.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preparing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0G0-qB-saf" userLabel="Status">
+                                                    <rect key="frame" x="153" y="123" width="74.5" height="20"/>
+                                                    <color key="backgroundColor" red="0.94275027513504028" green="0.69018577375538759" blue="0.34677758543218762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created at 04-08-2018 15:31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sP-jD-tQm" userLabel="TimeCreated">
+                                                    <rect key="frame" x="153" y="27" width="177.5" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="v9O-oO-hqk" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="PSo-2G-SxB" secondAttribute="trailing" symbolic="YES" id="4Dd-cG-Kep"/>
+                                            <constraint firstItem="Uwb-ep-LXn" firstAttribute="top" secondItem="PSo-2G-SxB" secondAttribute="top" id="4Yr-SS-mOw"/>
+                                            <constraint firstItem="Uwb-ep-LXn" firstAttribute="width" secondItem="PSo-2G-SxB" secondAttribute="height" id="HpW-nO-0qL"/>
+                                            <constraint firstItem="7sP-jD-tQm" firstAttribute="top" secondItem="v9O-oO-hqk" secondAttribute="bottom" constant="5" id="JDh-Xy-mry"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7sP-jD-tQm" secondAttribute="trailing" symbolic="YES" id="KgT-yr-P6h"/>
+                                            <constraint firstItem="v9O-oO-hqk" firstAttribute="top" secondItem="PSo-2G-SxB" secondAttribute="top" constant="5" id="byX-IM-7bC"/>
+                                            <constraint firstItem="Uwb-ep-LXn" firstAttribute="bottom" secondItem="PSo-2G-SxB" secondAttribute="bottom" constant="-5" id="cU5-lE-L79"/>
+                                            <constraint firstItem="v9O-oO-hqk" firstAttribute="leading" secondItem="Uwb-ep-LXn" secondAttribute="trailing" constant="5" id="jlN-h4-XVe"/>
+                                            <constraint firstItem="0G0-qB-saf" firstAttribute="leading" secondItem="Uwb-ep-LXn" secondAttribute="trailing" constant="5" id="sH3-l7-YZV"/>
+                                            <constraint firstItem="7sP-jD-tQm" firstAttribute="leading" secondItem="Uwb-ep-LXn" secondAttribute="trailing" constant="5" id="sLQ-4W-FAi"/>
+                                            <constraint firstItem="0G0-qB-saf" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="PSo-2G-SxB" secondAttribute="trailing" priority="200" symbolic="YES" id="u8g-wk-3uf"/>
+                                            <constraint firstAttribute="bottom" secondItem="0G0-qB-saf" secondAttribute="bottom" constant="5" id="wXu-eq-dgV"/>
+                                            <constraint firstItem="Uwb-ep-LXn" firstAttribute="leading" secondItem="PSo-2G-SxB" secondAttribute="leading" id="x8J-35-gIq"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="diC-ic-ykI" firstAttribute="top" secondItem="8Be-Ad-JRx" secondAttribute="bottom" id="Iw8-xM-M1d"/>
+                            <constraint firstItem="8Be-Ad-JRx" firstAttribute="leading" secondItem="MAZ-b2-tHv" secondAttribute="leading" id="Jxl-y1-oT8"/>
+                            <constraint firstItem="diC-ic-ykI" firstAttribute="trailing" secondItem="MAZ-b2-tHv" secondAttribute="trailing" id="hFw-O8-00Y"/>
+                            <constraint firstItem="diC-ic-ykI" firstAttribute="leading" secondItem="MAZ-b2-tHv" secondAttribute="leading" id="loY-rd-iLf"/>
+                            <constraint firstItem="diC-ic-ykI" firstAttribute="bottom" secondItem="MAZ-b2-tHv" secondAttribute="bottom" id="nRI-RI-ahk"/>
+                            <constraint firstItem="8Be-Ad-JRx" firstAttribute="top" secondItem="MAZ-b2-tHv" secondAttribute="top" id="onA-AD-WqE"/>
+                            <constraint firstItem="8Be-Ad-JRx" firstAttribute="trailing" secondItem="MAZ-b2-tHv" secondAttribute="trailing" id="zjG-EA-GLJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MAZ-b2-tHv"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Orders" image="order" id="Li1-bt-mes"/>
+                    <connections>
+                        <outlet property="orderListing" destination="diC-ic-ykI" id="0DL-jW-LXs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rnb-Wf-t1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="985" y="553"/>
+            <point key="canvasLocation" x="984.79999999999995" y="552.77361319340332"/>
         </scene>
         <!--Me-->
         <scene sceneID="bYR-ht-eHj">
@@ -154,6 +239,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chickenRice" width="1000" height="1000"/>
         <image name="me" width="20" height="20"/>
         <image name="order" width="20" height="20"/>
         <image name="pasta" width="640" height="428"/>
