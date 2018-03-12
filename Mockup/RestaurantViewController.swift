@@ -13,9 +13,9 @@ class RestaurantViewController: UIViewController {
     @IBOutlet weak var restaurantListing: UICollectionView!
 
     let food = [#imageLiteral(resourceName: "cake"), #imageLiteral(resourceName: "fruit"), #imageLiteral(resourceName: "pasta"), #imageLiteral(resourceName: "pizza"), #imageLiteral(resourceName: "salmon")]
-    let name = ["Swift Canteen", "Blast Saga Food Center", "AMK Hawker Center", "My pizza", "Vista Cut"]
-    let location = ["<100m", "<500m", "10km", "30km", "5km"]
-    let waitingTime = ["15min", "7min", "10min", "30min", "<1min"]
+    let name = ["Swift Canteen Cafe", "Blast Saga Canteen Salad", "Biz Canteen Western", "My pizza", "Vista Cut"]
+    let location = ["<100m", "<500m", "2km", "3km", "5km"]
+    let waitingTime = ["15 queuing", "7 queuing", "10 queuing", "20 queuing", "No queue yet"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
