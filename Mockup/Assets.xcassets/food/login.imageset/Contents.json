@@ -2,16 +2,13 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "chickenRice.jpg",
+      "filename" : "login.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "login@2x.png",
       "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
     }
   ],
   "info" : {

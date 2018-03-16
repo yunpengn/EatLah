@@ -143,6 +143,41 @@
             </objects>
             <point key="canvasLocation" x="30" y="933"/>
         </scene>
+        <!--LoginViewController-->
+        <scene sceneID="Olr-oG-dWH">
+            <objects>
+                <viewController id="XW6-LZ-SEQ" userLabel="LoginViewController" customClass="LoginViewController" customModule="Mockup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sUJ-Dz-sEC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MR4-Ix-cPy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MR4-Ix-cPy" firstAttribute="bottom" secondItem="k9n-Sa-ScA" secondAttribute="bottom" id="GPS-Y3-Xmw"/>
+                            <constraint firstItem="MR4-Ix-cPy" firstAttribute="trailing" secondItem="k9n-Sa-ScA" secondAttribute="trailing" id="IwN-PQ-YF3"/>
+                            <constraint firstItem="MR4-Ix-cPy" firstAttribute="top" secondItem="k9n-Sa-ScA" secondAttribute="top" constant="-20" id="PEd-NC-wSR"/>
+                            <constraint firstItem="MR4-Ix-cPy" firstAttribute="leading" secondItem="k9n-Sa-ScA" secondAttribute="leading" id="nqJ-uS-ZsQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k9n-Sa-ScA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Login" image="login" id="FvT-Zh-jw7"/>
+                    <connections>
+                        <outlet property="webview" destination="MR4-Ix-cPy" id="mPZ-He-QQg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4o-pv-457" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.600000000000001" y="-484.40779610194909"/>
+        </scene>
         <!--ListingViewController-->
         <scene sceneID="rhe-pJ-IcB">
             <objects>
@@ -258,6 +293,7 @@
                         <segue destination="rxd-Z0-Orb" kind="relationship" relationship="viewControllers" id="8cJ-Cu-D6q"/>
                         <segue destination="MzF-Xn-Yxx" kind="relationship" relationship="viewControllers" id="KVN-CF-VBa"/>
                         <segue destination="tem-bQ-de6" kind="relationship" relationship="viewControllers" id="86u-nl-xEJ"/>
+                        <segue destination="XW6-LZ-SEQ" kind="relationship" relationship="viewControllers" id="01h-QO-wG1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3D7-W7-6ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -267,6 +303,7 @@
     </scenes>
     <resources>
         <image name="chickenRice" width="1000" height="1000"/>
+        <image name="login" width="20" height="20"/>
         <image name="me" width="20" height="20"/>
         <image name="order" width="20" height="20"/>
         <image name="pasta" width="640" height="428"/>
